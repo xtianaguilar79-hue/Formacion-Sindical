@@ -1,2 +1,43 @@
-﻿NEXT_PUBLIC_SUPABASE_URL=https://kkgrqgdddizrmspsmqzy.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtrZ3JxZ2RkZGl6cm1zcHNtcXp5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM5ODg0NjQsImV4cCI6MjA5OTU2NDQ2NH0.AhCJIA9toBoT5scduaCTR3ib-zFY71EV85eH65SPbys
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": [
+    "node_modules",
+    "app/_sites-preview",
+    "build",
+    "db",
+    "examples",
+    "worker",
+    "vite.config.ts",
+    "drizzle.config.ts"
+  ]
+}
